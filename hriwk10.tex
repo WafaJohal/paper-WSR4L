@@ -1,5 +1,11 @@
 \documentclass{sig-alternate-05-2015}
-\usepackage[utf8]{inputenc}
+\usepackage[bookmarks=true]{hyperref}
+\usepackage[utf8x]{inputenc}
+\usepackage{todonotes}
+\usepackage{enumitem}
+
+\newcommand{\comments}[1]{\todo[inline,linecolor=blue,backgroundcolor=blue!15,bordercolor=blue]{#1}}
+
 
 \begin{document}
 
@@ -22,20 +28,20 @@ Wafa Johal\\
        \affaddr{{\'E}cole Polytechnique}\\
        \affaddr{F{\'e}d{\'e}rale Lausanne}\\
        \affaddr{Lausanne, Switzerland}\\
-       \email{wafa.johal@epfl.ch}
+       \affaddr{wafa.johal@epfl.ch}
 % 2nd. author
 \alignauthor
 Paul Vogt\\
        \affaddr{Tilburg center for Cognition and Computation}\\
        \affaddr{Tilburg University}\\
        \affaddr{Netherlands}\\
-       \email{p.a.vogt@uvt.nl}
+       \affaddr{p.a.vogt@uvt.nl}
 % 3rd. author
 \alignauthor James Kennedy\\
        \affaddr{Centre for Robotics and Neural Systems}\\
        \affaddr{Plymouth University}\\
        \affaddr{United Kingdom}\\
-       \email{james.kennedy\\@plymouth.ac.uk}
+       \affaddr{james.kennedy\\@plymouth.ac.uk}
 \and  % use '\and' if you need 'another row' of author names
 % 4th. author
 \alignauthor Mirjam de Haas\\
@@ -43,29 +49,31 @@ Paul Vogt\\
 	   \affaddr{and Computation}\\
 	   \affaddr{Tilburg University}\\
 	   \affaddr{Netherlands}\\
-	   \email{mirjam.dehaas@uvt.nll}
+	   \affaddr{mirjam.dehaas@uvt.nll}
 % 5th. author
 \alignauthor Ana Paiva\\
        \affaddr{Instituto Superior T{\'e}cnico}\\
        \affaddr{University of Lisbon}\\
        \affaddr{Portugal}\\
-       \email{ana.paiva@inesc-id.pt}
+       \affaddr{ana.paiva@inesc-id.pt}
 % 6th. author
 \alignauthor Ginevra Castellano\\
 	   \affaddr{Department of Information Technology}\\
        \affaddr{Uppsala University}\\
        \affaddr{Sweden}\\
-       \email{ginevra.castellano\\@it.uu.se}
+       \affaddr{ginevra.castellano\\@it.uu.se}
 }
 % There's nothing stopping you putting the seventh, eighth, etc.
 % author on the opening page (as the 'third row') but we ask,
 % for aesthetic reasons that you place these 'additional authors'
 % in the \additional authors block, viz.
-\additionalauthors{Additional authors: 
-Sandra Okita (Teachers College - Columbia University, United States, email: {\texttt{okita@tc.colum-bia.edu}}), Fumihide Tanaka
-(University of Tsukuba, Japan, email: {\texttt{tanaka@iit.tsukuba.ac.jp}}), 
-Tony Belpaeme (Centre for Robotics and Neural Systems, Plymouth University, U.K. and Ghent University, Belgium, email: {\texttt{tony.belpa-eme@plymouth.ac.uk}}) and
-Pierre Dillenbourg (CHILI Lab, {\'E}cole F{\'e}d{\'e}rale Polytechnique Lausanne, Switzerland, email: {\texttt{pierre.dillenbourg@epfl.ch}}). 
+\additionalauthors{
+\begin{itemize}[noitemsep,nolistsep,leftmargin=.1in]
+\item Sandra Okita, Teachers College - Columbia University, United States, {\texttt{okita@tc.colum-bia.edu}}
+\item Fumihide Tanaka, University of Tsukuba, Japan, \\ {\texttt{tanaka@iit.tsukuba.ac.jp}}
+\item Tony Belpaeme, Centre for Robotics and Neural Systems, Plymouth University, U.K. and Ghent University, Belgium, {\texttt{tony.belpa-eme@plymouth.ac.uk}}
+\item Pierre Dillenbourg, CHILI Lab, {\'E}cole F{\'e}d{\'e}rale Polytechnique Lausanne, Switzerland, {\texttt{pierre.dillenbourg@epfl.ch}}
+\end{itemize}
 }
 %\date{30 July 1999}
 % Just remember to make sure that the TOTAL number of authors
@@ -145,8 +153,8 @@ robots acting as tutors. While robots have been popular as a focus for STEM
 teaching (see Lego Mindstorms or Thymio \cite{riedo2012two}), the use of robots 
 as tutors is novel. The field of HRI has started reporting on how to make 
 effective robot tutors and how to measure their efficacy 
-\cite{kennedy2016social,tanaka2015pepper}. Social robot tutors have the 
-potential to enhance learning via kinesthetic interaction \cite{}, can improve 
+\cite{kennedy2016social,tanaka2015pepper}. Social robot tutors \comments{the jump to social robotics is a bit fast, we should include any robots using for educational purposes that aimto increase social interaction either between the robot and the user or among users} have the 
+potential to enhance learning via kinesthetic interaction \cite{lemaignan2016}, can improve 
 the learner's self-esteem \cite{}, and can provide empathic feedback 
 \cite{castellano2013towards}. Finally, robots have been shown to engage the 
 learner, to motivate her in the learning task or to enhance collaboration in a 
@@ -167,7 +175,25 @@ market-ready educational robots.
 %-----------------------------------------------------------------------------
 \section{Background}
 %-----------------------------------------------------------------------------
+
 % overview state-of-the-art for robots for learning (maybe also clarify what is meant by the term)
+
+Mubin \cite{mubin2013review} distinguish three roles for robots in education:
+\textbf{tutors} - providing help to students, \textbf{peers} - stimulating learning and \textbf{tools} - physically enhancing a concept to learn.
+
+At first, in the 70's qnd 80's robots tented to be introduce in schools as a tool for teachers to teach about robotics or other STEM sciences. 
+However, this specificity of usage of robots penalized their adoption in educational contexts \cite. 
+Nowadays, with robots being cheaper and more easily deployable, application in education and deployment in schools become accessible to other types of learning.  
+
+
+The current state of the art presents robots used in various learning scenarios related to non-programming curricula. 
+Often involving social robots these scenario usually investigate the social aspect of the robot-learner relationship: empathy \cite{}, immediacy, spatial arrangement\cite{}, \dots
+
+limits of the soa:
+- Design of this experiment often without involving educational specialist or practitioners. 
+- long term use of robots
+- many works have been done in CSCL to introduce technologies (computers, tablets and other hci device ias tools) need to llok at how and why
+- proving the impact of learning with a robot, is it only motivational?
 
 % close by highlighting some challenges (which we can talk about addressing in outline...)
 %However, many questions still remain. For instance, what interaction strategies aid learning, and which hamper learning? How can we deal with the current technical limitations of robots? How should effective lessons be developed and implemented on a robot? Answering these and other questions requires a multidisciplinary effort, including contributions from pedagogy, developmental psychology, (computational) linguistics, artificial intelligence and HRI, among others. 
@@ -182,7 +208,7 @@ forefront of field and from discussions on how to move from fundamental research
 towards the development of market-ready educational robots.
 
 % how will the aims be achieved on the day?
-The workshop aims will be achieved through
+The workshop aims will be achieved through 
 
 %-------------------------------------------
 %\section{Organizers}
