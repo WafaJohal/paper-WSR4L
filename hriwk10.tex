@@ -3,6 +3,7 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{todonotes}
 \usepackage{enumitem}
+\usepackage{microtype}
 
 \newcommand{\comments}[1]{\todo[inline,linecolor=blue,backgroundcolor=blue!15,bordercolor=blue]{#1}}
 
@@ -80,22 +81,20 @@ Paul Vogt\\
 % is the number that will appear on the first page PLUS the
 % number that will appear in the \additionalauthors section.
 
-%TODO fix author emails going outside page boundary
-
 \maketitle
 
 %-----------------------------------------------------------------------------
 \begin{abstract}
  While robots have been popular as a tool for 
-STEM teaching, the use of robots in other learning scenario is novel. 
+STEM teaching, the use of robots in other learning scenarios is novel. 
 The field of HRI has 
 started to report on how to make effective robots usable in educational contexts. However, many 
-challenges remain. For instance, what interaction strategies aid learning, and 
+challenges remain. For instance, which interaction strategies aid learning, and 
 which hamper learning? How can we deal with the current technical limitations of 
 robots? Answering these and other questions requires a multidisciplinary effort, 
 including contributions from pedagogy, developmental psychology, (computational) 
 linguistics, artificial intelligence and HRI, among others. This abstract 
-provides an overview of the current state-of-the-art in robots designed for learning with social aspects and 
+provides a brief overview of the current state-of-the-art in social robots designed for learning and 
 describes the aims of the Robots for Learning (R4L) workshop in bringing 
 together a multidisciplinary audience for furthering the development of 
 market-ready educational robots.
@@ -147,15 +146,15 @@ market-ready educational robots.
 \section{Introduction \& Background}
 %-----------------------------------------------------------------------------
 % 1 paragraph high-level overview
-An increasing amount of HRI research is focused on the development of applications of service robots in everyday life. 
+An increasing amount of Human-Robot Interaction (HRI) research is focused on the development of applications of service robots in everyday life. 
 In education, while robots have been popular as a focus for STEM 
 teaching (cf. Lego Mindstorms or Thymio \cite{riedo2012two}), the use of robots in other learning scenarios is novel. 
 
-Mubin \cite{mubin2013review} distinguishes three roles for robots in education:
+Mubin et al. \cite{mubin2013review} distinguish three roles for robots in education:
 1) \textbf{tutors} - providing help to students, 2) \textbf{peers} - stimulating learning, and 3) \textbf{tools} - physically enhancing a concept to learn.
-In the 70's and 80's robots tended to be introduced in schools as a tool for teachers to teach robotics or other STEM subjects. 
-However, this specificity of robots usage penalized their adoption in educational contexts \cite{gander2013informatics}. 
-Nowadays, with robots being cheaper and more easily deployable, application in education becomes possible for other types of learning.  
+In the 1970's and 80's robots tended to be introduced in schools as a tool for teachers to teach robotics or other STEM subjects. 
+However, this specificity of robot usage penalized their adoption in educational contexts \cite{gander2013informatics}.
+Nowadays, with robots being cheaper and more easily deployable, application in education becomes possible for other types of learning.
 
 % 1 paragraph talk about previous version of workshop (what was done there, and what this will add)
 
@@ -182,9 +181,9 @@ the learner's self-esteem, and can provide empathic feedback
 learner, to motivate her in the learning task or to stimulate collaboration in a 
 group \cite{park2013providing}. However, many challenges remain and this workshop aims to bring 
 together a multidisciplinary group of researchers to discuss these challenges 
-and share expertise.
+and share expertise. Such challenges and questions that are yet to be comprehensively addressed by the research community include: the effective involvement of education practitioners in the design of activities, the outcome of long-term learning with robots, appropriate educational strategies for use in HRI, and the influence of HRI on affective aspects of learning, such as motivation and self-efficacy.
 
-Among challenges that need to be faced by the research community, we can mention: How to involve of practitioners in the design of educational activities? What is the effect of long-term training with robots? What interactions have an impact on learning? What educational strategies can be used in HRI? How does HRI have an impact on learners' motivation and self-efficacy?
+%Among challenges that need to be faced by the research community, we can mention: how to involve of practitioners in the design of educational activities? What is the effect of long-term training with robots? What interactions have an impact on learning? What educational strategies can be used in HRI? How does HRI have an impact on learners' motivation and self-efficacy?
 
 The second iteration of this workshop builds on the previous version hosted at 
 the IEEE International Symposium on Robot and Human Interactive Communication 
@@ -219,23 +218,23 @@ The afternoon will be dedicated to discussion, including both a panel session an
 % some workshop abstracts include details about the organizers...but maybe we should avoid that given that it would produce a short novel.
 \emph{Wafa Johal}, PhD. is a postdoctoral researcher within the CoWriter and Cellulo projects dealing with robots for education in the CHILI and LSRO Labs at EPFL. She obtained her PhD in 2015 from the University of Grenoble (France) focusing on body signals in Child-Robot Interaction.  
 
-\emph{Paul Vogt} is Associate Professor in Language learning and HRI. He is a trained cognitive scientist and holds a PhD in Artificial Intelligence. His research focuses on 1rst and 2nd language acquisition using methods from ethnographic research, psycholinguistics, computational modelling of language acquisition and HRI. Paul is one of the principal investigators in the L2TOR project.
+\emph{Paul Vogt} is Associate Professor in Language learning and HRI. He is a trained cognitive scientist and holds a PhD in Artificial Intelligence. His research focuses on 1st and 2nd language acquisition using methods from ethnographic research, psycholinguistics, computational modelling of language acquisition and HRI. Paul is one of the principal investigators in the L2TOR project.
 
 \emph{James Kennedy} is currently completing his PhD in Human-Robot Interaction at Plymouth University (U.K.). His research interests centre around social companion robots, particularly in educational interactions with children. He has been involved with the ALIZ-E, DREAM and L2TOR European projects.
 
-\emph{Mirjam de Haas} finished her master in Artificial Intelligence and is a PhD student in the L2TOR project. Her research focuses on the interaction between robots and children and how to design a child-friendly robot.
+\emph{Mirjam de Haas} finished her Master's degree in Artificial Intelligence and is a PhD student in the L2TOR project. Her research focuses on the interaction between robots and children and how to design a child-friendly robot.
 
-\emph{Ana Maria Paiva}'s main scientific interests lay in the area of Autonomous Agents, Embodied Conversational Agents and Robots and Multiagent Simulation Systems. She has been researching in the area of artificial intelligence for the past twenty years. She is the principal investigator of the eCUTE aiming in exploring technologically-enhanced learning approaches for intercultural understanding.
+\emph{Ana Maria Paiva}'s main scientific interests lie in the area of Autonomous Agents, Embodied Conversational Agents and Robots, and Multiagent Simulation Systems. She has been researching in the area of artificial intelligence for the past twenty years. She is the principal investigator of the eCUTE project aiming to explore technologically-enhanced learning approaches for inter-cultural understanding.
 
 \emph{Ginevra Castellano} is an associate senior lecturer in intelligent interactive systems at Uppsala University, where she leads the Social Robotics Lab. She was the coordinator of the EMOTE project, which developed educational robots to support teachers in a classroom environment.
 
 \emph{Sandra Okita} is an Associate Professor of Technology and Education at Teachers College, Columbia University. Her current research interest is focused on the learning partnership between individuals and technology, and how technology intersects with learning and instructional processes.
 
-\emph{Fumihide Tanaka}, PhD,  has been actively working in the area of educational robots and child-robot interaction, and now is recognized as one of the pioneers in this research area. He moved to academia in 2008, the University of Tokyo (2014), and is now at the University of Tsukuba.
+\emph{Fumihide Tanaka}, PhD, has been actively working in the area of educational robots and child-robot interaction, and is now recognized as one of the pioneers in this research area. He moved to academia in 2008, the University of Tokyo (2014), and is currently at the University of Tsukuba, Japan.
 
 \emph{Tony Belpaeme}'s research focuses on cognitive robotics and social Human-Robot Interaction, in which natural and artificial cognition is considered to be closely intertwined with social interaction. He coordinates the L2TOR project on learning a 2nd language using robot tutors, and collaborates on several international research projects on HRI and cognitive robotics.
 
-\emph{Pierre Dillenbourg} is a former teacher in elementary school. He graduated in educational science (University of Mons, Belgium). His research on learning technologies started in 1984. He obtained a PhD in computer science from the University of Lancaster (UK), in artificial intelligence applications for educational software. He is currently full professor in learning technologies, head of the CHILI Lab involved in both CoWriter and Cellulo projects.
+\emph{Pierre Dillenbourg} is a former elementary school teacher. He graduated in educational science (University of Mons, Belgium). His research on learning technologies started in 1984. He obtained a PhD in computer science from the University of Lancaster (UK), in artificial intelligence applications for educational software. He is currently full professor in learning technologies, head of the CHILI Lab involved in both CoWriter and Cellulo projects.
 
 %-----------------------------------------------------------------------------
 \section{Acknowledgments}
