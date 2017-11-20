@@ -1,27 +1,29 @@
 \documentclass{sig-alternate-05-2015}
 \usepackage[bookmarks=true]{hyperref}
 \usepackage[utf8x]{inputenc}
-\usepackage{todonotes}
 \usepackage{enumitem}
 \usepackage{microtype}
-
-\newcommand{\comments}[1]{\todo[inline,linecolor=blue,backgroundcolor=blue!15,bordercolor=blue]{#1}}
+\usepackage[svgnames,rgb]{xcolor}
+\usepackage[subject={Todo},author={Wafa}]{pdfcomment}
 
 
 \begin{document}
 
-\CopyrightYear{2017}
+\CopyrightYear{2018}
 \setcopyright{rightsretained}
-\conferenceinfo{HRI '17 Companion}{March 06-09, 2017, Vienna, Austria}
-\isbn{978-1-4503-4885-0/17/03}
-\doi{http://dx.doi.org/10.1145/3029798.3029801}
+\isbn{} 
+\doi{} 
+\conferenceinfo{HRI '18}{March 05-08, 2018, Chicago, IL, USA}
+
 
 %\clubpenalty=10000
 %\widowpenalty = 10000---
 
-\title{Workshop on Robots for Learning -  R4L}
+\title{Robots for​ Learning​ ​-​ ​R4L }
+\subtitle{Inclusive​ ​Learning​ ​​}
 
-\numberofauthors{10} 
+\vspace{3cm}
+\numberofauthors{6} 
 \author{
 \alignauthor
 Wafa Johal\\
@@ -31,73 +33,43 @@ Wafa Johal\\
        \affaddr{Lausanne, Switzerland}\\
        \affaddr{wafa.johal@epfl.ch}
 % 2nd. author
-\alignauthor
-Paul Vogt\\
-       \affaddr{Tilburg center for Cognition and Computation}\\
-       \affaddr{Tilburg University}\\
-       \affaddr{Netherlands}\\
-       \affaddr{p.a.vogt@uvt.nl}
-% 3rd. author
 \alignauthor James Kennedy\\
-       \affaddr{Centre for Robotics and Neural Systems}\\
-       \affaddr{Plymouth University}\\
-       \affaddr{United Kingdom}\\
-       \affaddr{james.kennedy\\@plymouth.ac.uk}
+       \affaddr{Disney Research}\\
+       \affaddr{Pittsburgh, USA}\\
+       \affaddr{james.kennedy@disneyresearch.com}
+% 3rd. author    
+\alignauthor Vicky Charisi\\
+\affaddr{University of Twente, NL}\\
+\affaddr{University College London, U.K}\\
+\affaddr{vicky.charisi.14@ucl.ac.uk}
 \and  % use '\and' if you need 'another row' of author names
 % 4th. author
-\alignauthor Mirjam de Haas\\
-	   \affaddr{Tilburg center for Cognition}\\
-	   \affaddr{and Computation}\\
-	   \affaddr{Tilburg University}\\
-	   \affaddr{Netherlands}\\
-	   \affaddr{mirjam.dehaas@uvt.nl}
+\alignauthor Hae Won Park\\
+	   \affaddr{Personal Robots Group}\\
+	   \affaddr{MIT Media Lab}\\
+	   \affaddr{Cambridge. MA}\\
+	   \affaddr{haewon@media.mit.edu}
 % 5th. author
-\alignauthor Ana Paiva\\
-       \affaddr{Instituto Superior T{\'e}cnico}\\
-       \affaddr{University of Lisbon}\\
-       \affaddr{Portugal}\\
-       \affaddr{ana.paiva@inesc-id.pt}
-% 6th. author
 \alignauthor Ginevra Castellano\\
-	   \affaddr{Department of Information Technology}\\
-       \affaddr{Uppsala University}\\
-       \affaddr{Sweden}\\
-       \affaddr{ginevra.castellano\\@it.uu.se}
+\affaddr{Department of Information Technology}\\
+\affaddr{Uppsala University}\\
+\affaddr{Sweden}\\
+\affaddr{ginevra.castellano\\@it.uu.se}
+% 6th. author
+\alignauthor Pierre Dillenbourg\\
+\affaddr{CHILI Lab}\\
+\affaddr{{\'E}cole F{\'e}d{\'e}rale Polytechnique Lausanne}\\
+\affaddr{Switzerland}\\
+\affaddr{pierre.dillenbourg@epfl.ch}
 }
-% There's nothing stopping you putting the seventh, eighth, etc.
-% author on the opening page (as the 'third row') but we ask,
-% for aesthetic reasons that you place these 'additional authors'
-% in the \additional authors block, viz.
-\additionalauthors{
-\begin{itemize}[noitemsep,nolistsep,leftmargin=.1in]
-\item Sandra Okita, Teachers College - Columbia University, United States, {\texttt{okita@tc.columbia.edu}}
-\item Fumihide Tanaka, University of Tsukuba, Japan, \\ {\texttt{tanaka@iit.tsukuba.ac.jp}}
-\item Tony Belpaeme, Centre for Robotics and Neural Systems, Plymouth University, U.K. and Ghent University, Belgium, \\ {\texttt{tony.belpaeme@plymouth.ac.uk}}
-\item Pierre Dillenbourg, CHILI Lab, {\'E}cole F{\'e}d{\'e}rale Polytechnique Lausanne, Switzerland, {\texttt{pierre.dillenbourg@epfl.ch}}
-\end{itemize}
-}
-%\date{30 July 1999}
-% Just remember to make sure that the TOTAL number of authors
-% is the number that will appear on the first page PLUS the
-% number that will appear in the \additionalauthors section.
 
 \maketitle
 
 %-----------------------------------------------------------------------------
 \begin{abstract}
- While robots have been popular as a tool for 
-STEM teaching, the use of robots in other learning scenarios is novel. 
-The field of HRI has 
-started to report on how to make effective robots usable in educational contexts. However, many 
-challenges remain. For instance, which interaction strategies aid learning, and 
-which hamper learning? How can we deal with the current technical limitations of 
-robots? Answering these and other questions requires a multidisciplinary effort, 
-including contributions from pedagogy, developmental psychology, (computational) 
-linguistics, artificial intelligence and HRI, among others. This abstract 
-provides a brief overview of the current state-of-the-art in social robots designed for learning and 
-describes the aims of the Robots for Learning (R4L) workshop in bringing 
-together a multidisciplinary audience for furthering the development of 
-market-ready educational robots.
+In recent years, research in Human-Robot Interaction has increasingly attracted interest from the field of education in particular. However, this interest is not new: the logo turtle entered schools nearly 40 years ago. Over this period, robots have changed a lot: sequentially or eventually programmable, they also integrate a wide spectrum of sensors and actuators. Hence, new applications in educational contexts can now be envisioned.
+The Robots for Learning (R4L) workshop is in its 4th series, and the focus of this edition is on \emph{inclusive learning}. Robots as educational agents have been studied and deployed in various forms - as tools, mediators, tutors, and peers. In this workshop, we aim to discuss the approaches and challenges of developing these educational robots to be more inclusive, helping learners of different ages, backgrounds, genders, and learning abilities. Learners with difficulties often need more attention or personalised training. With this workshop, we aim at discussing recent advances in empirical and theoretical state-of-the-art research contributions on human-robot interaction in educational contexts on the following challenges:  How to design robots to adapt to learners abilities? How to build long-term learning with robots? How can robots engage learners in playful learning activities? How can robots assist learners in multimodal learning scenarios?
+
 \end{abstract}
 %-----------------------------------------------------------------------------
 
@@ -140,111 +112,184 @@ market-ready educational robots.
 %
 %\printccsdesc
 
-\keywords{Human-Robot Interaction; Robots in Education; Tutor Robots; Child-Robot Interaction}
+%\keywords{Human-Robot Interaction; Robots in Education; Tutor Robots; Child-Robot Interaction}
 
 %-----------------------------------------------------------------------------
-\section{Introduction \& Background}
+%\section{Introduction \& Background}
+%%-----------------------------------------------------------------------------
+%\pdfmargincomment[color=blue,icon=Note]{TODO: update this section}.
+%% 1 paragraph high-level overview
+%An increasing amount of Human-Robot Interaction (HRI) research is focused on the development of applications of service robots in everyday life. 
+%In education, while robots have been popular as a focus for STEM 
+%teaching (cf. Lego Mindstorms or Thymio \cite{riedo2012two}), the use of robots in other learning scenarios is novel. 
+%
+%Mubin et al. \cite{mubin2013review} distinguish three roles for robots in education:
+%1) \textbf{tutors} - providing help to students, 2) \textbf{peers} - stimulating learning, and 3) \textbf{tools} - physically enhancing a concept to learn.
+%In the 1970's and 80's robots tended to be introduced in schools as a tool for teachers to teach robotics or other STEM subjects. 
+%However, this specificity of robot usage penalized their adoption in educational contexts \cite{gander2013informatics}.
+%Nowadays, with robots being cheaper and more easily deployable, application in education becomes possible for other types of learning.
+%
+%% 1 paragraph talk about previous version of workshop (what was done there, and what this will add)
+%
+%
+%%-----------------------------------------------------------------------------
+%%\section{Background}
+%%-----------------------------------------------------------------------------
+%
+%% overview state-of-the-art for robots for learning (maybe also clarify what is meant by the term)
+%
+%
+%
+%
+%%The current state of the art presents robots used in various learning scenarios related to non-programming curricula. 
+%%Often involving social robots, these scenario usually investigate the social aspect of the robot-learner relationship (i.e. empathy \cite{castellano2013towards,leite2014empathic} or immediacy \cite{kennedy2016social})
+%%While certain research focus in one-to-one setup exploiting social and task adaptive systems to individuals, others aim to provide a tool for the therapist or educators in  their teaching practice. 
+%
+%The field of HRI has started reporting on how to make 
+%effective robots and how to measure their efficacy 
+%\cite{kennedy2016social,tanaka2015pepper}. Robots have the 
+%potential to enhance learning via kinesthetic interaction, can improve 
+%the learner's self-esteem, and can provide empathic feedback 
+%\cite{castellano2013towards,lemaignan2016,tanaka2012children}. Finally, robots have been shown to engage the 
+%learner, to motivate her in the learning task or to stimulate collaboration in a 
+%group \cite{park2013providing}. However, many challenges remain and this workshop aims to bring 
+%together a multidisciplinary group of researchers to discuss these challenges 
+%and share expertise. Such challenges and questions that are yet to be comprehensively addressed by the research community include: the effective involvement of education practitioners in the design of activities, the outcome of long-term learning with robots, appropriate educational strategies for use in HRI, and the influence of HRI on affective aspects of learning, such as motivation and self-efficacy.
+%
+%%Among challenges that need to be faced by the research community, we can mention: how to involve of practitioners in the design of educational activities? What is the effect of long-term training with robots? What interactions have an impact on learning? What educational strategies can be used in HRI? How does HRI have an impact on learners' motivation and self-efficacy?
+%
+%The second iteration of this workshop builds on the previous version hosted at 
+%the IEEE International Symposium on Robot and Human Interactive Communication 
+%(RO-MAN), 2016. The previous workshop utilised keynote speakers, participant 
+%speakers, and small group discussions to raise issues and challenges facing the 
+%community researching robots for use in delivering educational content. The 
+%second version of this workshop seeks to engage with more researchers in the 
+%field, and draw a more multidisciplinary audience to further the development of 
+%market-ready educational robots.
+%
+%% close by highlighting some challenges (which we can talk about addressing in outline...)
+%%However, many questions still remain. For instance, what interaction strategies aid learning, and which hamper learning? How can we deal with the current technical limitations of robots? How should effective lessons be developed and implemented on a robot? Answering these and other questions requires a multidisciplinary effort, including contributions from pedagogy, developmental psychology, (computational) linguistics, artificial intelligence and HRI, among others. 
+
 %-----------------------------------------------------------------------------
-% 1 paragraph high-level overview
-An increasing amount of Human-Robot Interaction (HRI) research is focused on the development of applications of service robots in everyday life. 
-In education, while robots have been popular as a focus for STEM 
-teaching (cf. Lego Mindstorms or Thymio \cite{riedo2012two}), the use of robots in other learning scenarios is novel. 
-
-Mubin et al. \cite{mubin2013review} distinguish three roles for robots in education:
-1) \textbf{tutors} - providing help to students, 2) \textbf{peers} - stimulating learning, and 3) \textbf{tools} - physically enhancing a concept to learn.
-In the 1970's and 80's robots tended to be introduced in schools as a tool for teachers to teach robotics or other STEM subjects. 
-However, this specificity of robot usage penalized their adoption in educational contexts \cite{gander2013informatics}.
-Nowadays, with robots being cheaper and more easily deployable, application in education becomes possible for other types of learning.
-
-% 1 paragraph talk about previous version of workshop (what was done there, and what this will add)
-
-
-%-----------------------------------------------------------------------------
-%\section{Background}
-%-----------------------------------------------------------------------------
-
-% overview state-of-the-art for robots for learning (maybe also clarify what is meant by the term)
-
-
-
-
-%The current state of the art presents robots used in various learning scenarios related to non-programming curricula. 
-%Often involving social robots, these scenario usually investigate the social aspect of the robot-learner relationship (i.e. empathy \cite{castellano2013towards,leite2014empathic} or immediacy \cite{kennedy2016social})
-%While certain research focus in one-to-one setup exploiting social and task adaptive systems to individuals, others aim to provide a tool for the therapist or educators in  their teaching practice. 
-
-The field of HRI has started reporting on how to make 
-effective robots and how to measure their efficacy 
-\cite{kennedy2016social,tanaka2015pepper}. Robots have the 
-potential to enhance learning via kinesthetic interaction, can improve 
-the learner's self-esteem, and can provide empathic feedback 
-\cite{castellano2013towards,lemaignan2016,tanaka2012children}. Finally, robots have been shown to engage the 
-learner, to motivate her in the learning task or to stimulate collaboration in a 
-group \cite{park2013providing}. However, many challenges remain and this workshop aims to bring 
-together a multidisciplinary group of researchers to discuss these challenges 
-and share expertise. Such challenges and questions that are yet to be comprehensively addressed by the research community include: the effective involvement of education practitioners in the design of activities, the outcome of long-term learning with robots, appropriate educational strategies for use in HRI, and the influence of HRI on affective aspects of learning, such as motivation and self-efficacy.
-
-%Among challenges that need to be faced by the research community, we can mention: how to involve of practitioners in the design of educational activities? What is the effect of long-term training with robots? What interactions have an impact on learning? What educational strategies can be used in HRI? How does HRI have an impact on learners' motivation and self-efficacy?
-
-The second iteration of this workshop builds on the previous version hosted at 
-the IEEE International Symposium on Robot and Human Interactive Communication 
-(RO-MAN), 2016. The previous workshop utilised keynote speakers, participant 
-speakers, and small group discussions to raise issues and challenges facing the 
-community researching robots for use in delivering educational content. The 
-second version of this workshop seeks to engage with more researchers in the 
-field, and draw a more multidisciplinary audience to further the development of 
-market-ready educational robots.
-
-% close by highlighting some challenges (which we can talk about addressing in outline...)
-%However, many questions still remain. For instance, what interaction strategies aid learning, and which hamper learning? How can we deal with the current technical limitations of robots? How should effective lessons be developed and implemented on a robot? Answering these and other questions requires a multidisciplinary effort, including contributions from pedagogy, developmental psychology, (computational) linguistics, artificial intelligence and HRI, among others. 
-
-%-----------------------------------------------------------------------------
-\section{Outline of the Workshop}
-%-----------------------------------------------------------------------------
-% who is the workshop intended for?
-The aim of this workshop is to engage scholars who wish to gain expertise in 
-education and in robotics. Participants will benefit from hearing from the 
-forefront of field and from discussions on how to move from fundamental research 
-towards the development of market-ready educational robots.
-
-% how will the aims be achieved on the day?
-The workshop aims will be achieved through presentations and discussions. 
-Prospective participants are invited to submit 4-6 page papers describing work in progress, or containing preliminary results to discuss with the community.
-In order to stimulate interactions, the workshop will include short position paper presentations and poster sessions. 
-The afternoon will be dedicated to discussion, including both a panel session and semi-structured group discussions.
+%\section{Outline of the Workshop}
+%%-----------------------------------------------------------------------------
+%% who is the workshop intended for?
+%The aim of this workshop is to engage scholars who wish to gain expertise in 
+%education and in robotics. Participants will benefit from hearing from the 
+%forefront of field and from discussions on how to move from fundamental research 
+%towards the development of market-ready educational robots.
+%
+%% how will the aims be achieved on the day?
+%The workshop aims will be achieved through presentations and discussions. 
+%Prospective participants are invited to submit 4-6 page papers describing work in progress, or containing preliminary results to discuss with the community.
+%In order to stimulate interactions, the workshop will include short position paper presentations and poster sessions. 
+%The afternoon will be dedicated to discussion, including both a panel session and semi-structured group discussions.
 
 
 %-------------------------------------------
-\section{Organizers}
+\section*{Organizers}
 % some workshop abstracts include details about the organizers...but maybe we should avoid that given that it would produce a short novel.
-\emph{Wafa Johal}, PhD. is a postdoctoral researcher within the CoWriter and Cellulo projects dealing with robots for education in the CHILI and LSRO Labs at EPFL. She obtained her PhD in 2015 from the University of Grenoble (France) focusing on body signals in Child-Robot Interaction.  
+\textbf{Wafa Johal}, École Polytechnique Fédérale Lausanne, Switzerland. Wafa Johal obtained her PhD in 2015 from the University of Grenoble (France) focusing on bodily signals in Child-Robot Interaction. She is a Postdoctoral researcher in the Computer and Human Interaction Laboratory for Learning and Instruction  at EPFL. She works within the CoWriter and Cellulo projects dealing with robots for education. 
 
-\emph{Paul Vogt} is Associate Professor in Language learning and HRI. He is a trained cognitive scientist and holds a PhD in Artificial Intelligence. His research focuses on 1st and 2nd language acquisition using methods from ethnographic research, psycholinguistics, computational modelling of language acquisition and HRI. Paul is one of the principal investigators in the L2TOR project.
+\textbf{James Kennedy}, Disney Research, Pittsburgh, USA. James Kennedy received his PhD from Plymouth University, U.K. in 2017 for his work using social robots to tutor children. During his PhD, he worked in collaboration with the EU-funded DREAM, ALIZ-E, and L2TOR projects. He currently works as part of the Language Based Character Interaction group at Disney Research, focusing on the development of AI characters.
 
-\emph{James Kennedy} is currently completing his PhD in Human-Robot Interaction at Plymouth University (U.K.). His research interests centre around social companion robots, particularly in educational interactions with children. He has been involved with the ALIZ-E, DREAM and L2TOR European projects.
+\textbf{Vicky Charisi}, University of Twente, The Netherlands and University College London, U.K. Vicky Charisi is a post-doctoral researcher at the Human-Media Interaction group at the University of Twente. She completed her PhD studies at the UCL Institute of Education, U.K. focusing on child development within computer-supported music-making activities. Currently, she works on the topic of child-robot interaction designing robots for formal educational settings (EASEL) and playful activities (SQUIRREL) for children.
 
-\emph{Mirjam de Haas} finished her Master's degree in Artificial Intelligence and is a PhD student in the L2TOR project. Her research focuses on the interaction between robots and children and how to design a child-friendly robot.
+\textbf{Hae Won Park}, Massachusetts Institute of Technology, USA. Hae Won Park is a Research Scientist at the Personal Robots Group at the MIT Media Lab. Her research focuses on personalization of social robots to enable a long-term interaction between users and their robot companions. Her work spans a range of applications including education for young children and well-being benefits for the elderly. Hae Won received a PhD from Georgia Tech where she also co-founded Zyrobotics, an assistive education robotics startup.
 
-\emph{Ana Maria Paiva}'s main scientific interests lie in the area of Autonomous Agents, Embodied Conversational Agents and Robots, and Multiagent Simulation Systems. She has been researching in the area of artificial intelligence for the past twenty years. She is the principal investigator of the eCUTE project aiming to explore technologically-enhanced learning approaches for inter-cultural understanding.
+\textbf{Ginevra Castellano}, Uppsala University, Sweden. Ginevra Castellano is an associate senior lecturer in intelligent interactive systems at Uppsala University, where she leads the Social Robotics Lab. She was the coordinator of the EMOTE project (2012-2016), which developed educational robots to support teachers in a classroom environment.
 
-\emph{Ginevra Castellano} is an associate senior lecturer in intelligent interactive systems at Uppsala University, where she leads the Social Robotics Lab. She was the coordinator of the EMOTE project, which developed educational robots to support teachers in a classroom environment.
-
-\emph{Sandra Okita} is an Associate Professor of Technology and Education at Teachers College, Columbia University. Her current research interest is focused on the learning partnership between individuals and technology, and how technology intersects with learning and instructional processes.
-
-\emph{Fumihide Tanaka}, PhD, has been actively working in the area of educational robots and child-robot interaction, and is now recognized as one of the pioneers in this research area. He moved to academia in 2008, the University of Tokyo (2014), and is currently at the University of Tsukuba, Japan.
-
-\emph{Tony Belpaeme}'s research focuses on cognitive robotics and social Human-Robot Interaction, in which natural and artificial cognition is considered to be closely intertwined with social interaction. He coordinates the L2TOR project on learning a 2nd language using robot tutors, and collaborates on several international research projects on HRI and cognitive robotics.
-
-\emph{Pierre Dillenbourg} is a former elementary school teacher. He graduated in educational science (University of Mons, Belgium). His research on learning technologies started in 1984. He obtained a PhD in computer science from the University of Lancaster (UK), in artificial intelligence applications for educational software. He is currently full professor in learning technologies, head of the CHILI Lab involved in both CoWriter and Cellulo projects.
+\textbf{Pierre Dillenbourg}, École Fédérale Polytechnique Lausanne, Switzerland. Former teacher in elementary school, Pierre graduated in educational science (University of Mons, Belgium). His research on learning technologies started in 1984. He obtained a PhD in computer science from the University of Lancaster (UK), in artificial intelligence applications for educational software. He is currently full professor in learning technologies, head of the CHILI Lab involved in both CoWriter and Cellulo projects.
+%-----------------------------------------------------------------------------
 
 %-----------------------------------------------------------------------------
-\section{Acknowledgments}
-We would like to thank the Swiss National Science Foundation 
-\href{http://www.nccr-robotics.ch/}{National Centre of Competence in Research 
-Robotics} and the EU H2020 L2TOR project (grant no. 688014).
+\section*{Workshop Overview}
+We propose to organize a full-day workshop on the topic of Robots for Learning. The workshop will include:
+\begin{itemize}[label={--}]
+	\item Lightning talks: authors of accepted papers will provide short introduction of their posters.
+	\item Poster sessions: authors of accepted papers will present posters in the morning sessions.
+	\item Keynotes: invited senior researchers’ will share their perspectives and experiences on the field of technologies for education.
+	\item Structured group discussions: workshop attendees will engage in discussions on principal research questions or debates in the robots for education.
+\end{itemize}
+
+\subsection*{Provisional Full Day Workshop Schedule} (to be synchronized with refreshments and lunch arrangements)
+\begin{table}[h]
+\begin{tabular}{p{1cm} l || p{1cm} p{2.5cm}}
+9:00-9:10 	& Welcome 			& 12:20-13:45 & Lunch \\
+9:10-9:45 	& Keynote 1 		& 13:45-14:20 & Keynote 3 \\
+9:45-10:00 	& Lightning talks 	& 14:20-15:20 & Poster session 2 \\
+10:00-10:30 & Coffee break 		& 15:20-15:45 & Coffee break \\
+10:30-11:05 & Keynote 2 		& 15:45-17:00 & Semi-structured group discussions \\
+11:05-11:20 & Lightning talks 	& 17:00-17:45 & Panel discussion \& Wrap up \\
+11:20-12:20 & Poster session 1 	& & \\
+\end{tabular}
+\end{table}
+
+
+\subsection*{Target Audience and Approach for Recruiting Participants}
+We invite authors to report previous research, practice and interest in developing application in educational robotics. Researchers from HRI, robotics and educational backgrounds will be invited to contribute.
+The workshop will be advertised by sending a call-for-papers (presentations and posters) on robotics mailing lists and using social networks. Various projects involved in the organization will also be encouraged to participate (L2TOR, SQUIRREL, DE-ENIGMA, Baby Robot, CoWriter, Cellulo, SAR NSF Expedition, eCUTE, DREAM, ANIMATAS …). Previous editions of this workshop were held at RoMan 2016 and HRI2017. The workshop will also be advertised to the people who attended the previous editions. 
+
+\subsection*{Organizational Plan}
+\begin{table}[h]
+	\begin{tabular}{l l}
+	Call for papers: 		& 20 December 2017 \\
+	Submission deadline:	& 31 January 2018 \\ 
+	Notifications:			& 7 February 2018 \\
+	\end{tabular}
+\end{table}
+
+
+Papers will be reviewed for appropriateness and scientific and technical soundness. Priority will be given to papers which fit the theme of the call, which are complementary, and which offer a range of theoretical and cultural perspectives.
+
+\subsection*{Plan for Documenting the Workshop}
+The proceedings of the workshop will be made available on our website as well as arxiv.org.
+
+
+\subsection*{Invited Speakers}
+\begin{itemize} [label={}]
+	
+	\item Brian Scassellati, Yale University (confirmed)
+	\item Friederike Eyssel, Bielefeld University (confirmed)
+	\item Cynthia Breazeal, MIT (confirmed)
+	\item Ayanna Howard, Georgia Tech (contacted)
+\end{itemize}
+
+\subsection*{List of topics}
+\begin{itemize}[nosep]
+	\item Adaptive mechanisms for robot tutors, personalization and adaptation algorithms for tutoring interactions
+	\item Design of autonomous systems for tutoring interactions
+	\item Theories and methods for tutoring (pedagogical and  language acquisition)
+	\item Shared knowledge and knowledge modelling in HRI 
+	\item Human-robot collaborative learning
+	\item Attachment and learning with a social robot (social and cognitive development)
+	\item Engagement in educational human-robot interaction
+	\item Human-robot relationship assessment
+	\item Designing student models and assessing student’s learning    
+	\item Playful learning with a robot
+	\item Human-robot creativity     
+	\item Kinesthetic and non-verbal communication in human-robot interaction    
+	\item Impact of embodiment on learning   
+	\item Technical innovation in learning or teaching robots
+	\item Long term learning interactions, design and methodologies for repeated human-robot encounters
+	\item Robots for learners with special needs and special abilities
+	\item Education and re-training for adults      
+	\item Rehabilitation and re-education
+	\item Privacy and ethical issues in robot tutoring applications
+\end{itemize}
+
+
+
 
 %-----------------------------------------------------------------------------
-\small
-\bibliographystyle{abbrv}
-\bibliography{hriwk10_r4l}  
+%\section{Acknowledgments}
+%We would like to thank the Swiss National Science Foundation 
+%\href{http://www.nccr-robotics.ch/}{National Centre of Competence in Research 
+%Robotics} and \pdfmargincomment[color=blue,icon=Note]{Please add others}.
+
+%-----------------------------------------------------------------------------
+%\small
+%\bibliographystyle{abbrv}
+%\bibliography{hriwk10_r4l}  
 
 \end{document}
